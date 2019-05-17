@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 11px sans-serif;
+}
+
+.axis line,
+.axis text {
+  font: 11px sans-serif;
+}
+.axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+</style>
+<body>
+<link href="style.css" rel="stylesheet">
+<script src="http://d3js.org/d3.v4.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<div id="layout">
+	<div id="title">
+		<p style="font-weight:bold;"> FIFA 2019 </p>
+	</div>
+	<div id="visualization">
+		<svg class="chart"></svg>
+		<script src="fifa.js"></script>
+         </div>
+         <div id="filters">
+           <div>
+            <p>
+              <label>Select a Country</label>
+              <label id="nationality-label">all</label>
+            </p>
+              <select class="chooser" id="nationality">
+              </select>
+            </div>
+            <div>
+              <p>
+                <label>Select a Position of Player:</label>
+                <label id="position-label">all</label>
+              </p>
+              <select class="chooser" id="position">
+              </select>
+            </div>
+            <div id="slider-range"></div>
+            <p>
+              <label for="amount">Age Range:</label>
+              <input type="text" id="amount" readonly style="border:0; color:black; font-weight:bold;">
+            </p>
+
+	</div>
+
+
+</body>
+</html>
+
